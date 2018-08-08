@@ -1,7 +1,11 @@
 class Song 
+<<<<<<< HEAD
   attr_accessor :genre, :name
   attr_reader :artist 
   
+=======
+  attr_accessor :genre, :name, :artist
+>>>>>>> 703bb896b7fed576d227f04e751f6be312116280
   def initialize(name)
     @name = name
     @artist = nil
@@ -20,7 +24,11 @@ class Song
   
   def artist=(artist)
     @artist = artist
+<<<<<<< HEAD
     artist.add_song(self) unless artist.songs.include?(self)
+=======
+    artist.add_song(self) unless artist.add_song.include?(self)
+>>>>>>> 703bb896b7fed576d227f04e751f6be312116280
   end 
   
   def self.new_by_filename(filename)
